@@ -12,5 +12,5 @@ angular.module('App', ['ui.router','ui.materialize']) //sets app
              url: '/render',
              templateUrl: 'views/render.html',
              controller: 'render'
-         })
+         });
 }]);

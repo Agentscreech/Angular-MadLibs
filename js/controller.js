@@ -3,9 +3,8 @@ angular.module('App').controller('form', [
     '$state',
     'Inputs',
     function($scope, $state, Inputs) {
-        console.log('In form controller');
         $scope.$watch('inputs', function(oldInput, newInput){
-            Inputs.inputs = newInput
+            Inputs.inputs = newInput;
         });
         $scope.inputs = {
             mans_name: '',
@@ -14,7 +13,6 @@ angular.module('App').controller('form', [
             noun2: '',
             noun3: '',
             shape: '',
-            mans_name: '',
             verb1: '',
             womans_name: '',
             body_part: '',
@@ -36,7 +34,7 @@ angular.module('App').controller('form', [
             noun10: '',
             noun11: '',
             verb6: ''
-        }
+        };
     }
 ])
 .controller('render', ['$scope', '$state', 'Inputs', function ($scope, $state, Inputs){
