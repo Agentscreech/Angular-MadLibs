@@ -14,14 +14,17 @@
     <script src="js/app.js" charset="utf-8"></script>
     <script src="js/controller.js" charset="utf-8"></script>
     <script src="js/service.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="container" ng-app="App">
     <h1>Welcome to Movie Madlibs brought to you by Angular®</h1>
 
-    <p>click the button then fill in the forms provided.</p>
-    <p>once you are happy with your inputs, click the show story button to reveal your story</p>
-    <button class="btn btn-primary" ui-sref="form">Show The Form</button>
+    <div>
+        <p class="flow-text">Click the button then fill in the forms provided.</p>
+        <p class="flow-text">Once you are happy with your inputs, click the show story button to reveal your story</p>
+        <button class="btn btn-primary waves-effect waves-purple" ui-sref="form">Show The Form</button>
+    </div>
     <div ui-view class="">
 
     </div>
