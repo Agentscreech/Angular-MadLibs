@@ -1,3 +1,6 @@
+.parallax-container {
+    height: 200px;
+}
 .input {
     font-weight: bold;
 }
@@ -5,4 +8,13 @@
     height: 500px;
     overflow: scroll;
     margin-bottom: 20px;
+}
+
+body {
+    background-color: #dfdfdf;
+}
+
+.angular {
+    width: 50px;
+    height: 50px;
 }
