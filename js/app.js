@@ -12,5 +12,10 @@ angular.module('App', ['ui.router','ui.materialize']) //sets app
              url: '/night',
              templateUrl: 'views/night.html',
              controller: 'night'
+         })
+         .state('superhero', {
+           url: '/superhero',
+           templateUrl: 'views/superhero.html',
+           controller: 'superhero'
          });
 }]);

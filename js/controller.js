@@ -56,4 +56,29 @@ angular.module('App')
                 name: ''
             };
     }
-]);
+])
+    .controller('superhero', ['$scope', '$state', 'Inputs', function($scope, $state, Inputs) {
+            $scope.$watch('inputs', function(oldInput, newInput) {
+                Inputs.inputs = newInput;
+            });
+            $scope.inputs = {
+                silly_name: '',
+                unrealistic_profession: '',
+                country: '',
+                another_silly_name: '',
+                color: '',
+                adjetive: '',
+                adverb: '',
+                third_silly_name: '',
+                fourth_silly_name: '',
+                facial_feature: '',
+                fifth_silly_name: '',
+                us_city: '',
+                one_more_silly_name: '',
+                verb: '',
+                noun1: '',
+                formerly_badass_actor_now_selling_out: '',
+                noun2: ''
+            };
+    }
+    ]);
