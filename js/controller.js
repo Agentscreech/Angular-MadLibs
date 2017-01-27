@@ -67,7 +67,7 @@ angular.module('App')
                 country: '',
                 another_silly_name: '',
                 color: '',
-                adjetive: '',
+                adjective: '',
                 adverb: '',
                 third_silly_name: '',
                 fourth_silly_name: '',
