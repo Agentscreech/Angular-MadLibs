@@ -21,29 +21,30 @@
 
 <body class="container" ng-app="App">
     <div class="parallax-container">
-    <div class="parallax"><img src="img/madlib.jpg"></div>
-  </div>
-
-  <div class="section white">
-    <div class="row">
-<div class="col s12"><h1 class="center-align">Welcome to <br>Movie M<span><img class="angular" src="img/angular.svg"></span>dlibs</h1>
-  <p class="flow-text center-align">Click the button to choose your story then fill in the forms provided.</p>
-  <p class="flow-text center-align">Once you are happy with your inputs, click the show story button to reveal your story</p>
-        <div class="right-align">
-            <!-- Dropdown Trigger -->
-            <a class="dropdown-button btn" href="#" data-activates="dropdown1">Pick a Story</a>
-
-            <!-- Dropdown Structure -->
-            <ul id="dropdown1" class="dropdown-content">
-                <li><a ui-sref="bay">Micheal Bay</a></li>
-                <li><a ui-sref="night">M. Night Shyamalan</a></li>
-            </ul>
-            <!-- <button class="btn btn-primary waves-effect waves-purple " ui-sref="form">Show The Form</button> -->
-
-        </div>
-      </div>
+        <div class="parallax"><img src="img/madlib.jpg"></div>
     </div>
-  </div>
+
+    <div class="section white">
+        <div class="row">
+            <div class="col s12">
+                <h1 class="center-align">Welcome to <br>Movie M<span><img class="angular" src="img/angular.svg"></span>dlibs</h1>
+                <p class="flow-text center-align">Click the button to choose your story then fill in the forms provided.</p>
+                <p class="flow-text center-align">Once you are happy with your inputs, click the show story button to reveal your story</p>
+                <div class="right-align">
+                    <!-- Dropdown Trigger -->
+                    <a class="dropdown-button btn" href="#" data-activates="dropdown1">Pick a Story</a>
+
+                    <!-- Dropdown Structure -->
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li><a ui-sref="bay">Micheal Bay</a></li>
+                        <li><a ui-sref="night">M. Night Shyamalan</a></li>
+                    </ul>
+                    <!-- <button class="btn btn-primary waves-effect waves-purple " ui-sref="form">Show The Form</button> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div ui-view class="">
 
