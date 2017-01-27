@@ -1,3 +1,8 @@
 .input {
     font-weight: bold;
 }
+.story {
+    height: 500px;
+    overflow: scroll;
+    margin-bottom: 20px;
+}
