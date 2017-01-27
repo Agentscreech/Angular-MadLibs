@@ -1,8 +1,16 @@
+body {
+    background-color: #dfdfdf;
+}
+
 .parallax-container {
     height: 200px;
 }
 .input {
     font-weight: bold;
+}
+.angular {
+    width: 50px;
+    height: 50px;
 }
 .story {
     height: 500px;
@@ -30,14 +38,4 @@
 
 	/* Opera doesn't support this in the shorthand */
 	background-attachment: local, local, scroll, scroll;
-}
-}
-
-body {
-    background-color: #dfdfdf;
-}
-
-.angular {
-    width: 50px;
-    height: 50px;
 }
