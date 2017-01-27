@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -7,6 +6,7 @@
     <title>Half-Day Madlibs</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js" charset="utf-8"></script>
@@ -19,11 +19,22 @@
 
 <body class="container" ng-app="App">
     <h1>Welcome to Movie Madlibs brought to you by Angular®</h1>
-
     <div>
-        <p class="flow-text">Click the button then fill in the forms provided.</p>
+        <p class="flow-text">Click the button to choose your story then fill in the forms provided.</p>
         <p class="flow-text">Once you are happy with your inputs, click the show story button to reveal your story</p>
-        <button class="btn btn-primary waves-effect waves-purple" ui-sref="form">Show The Form</button>
+
+        <div class="right-align">
+            <!-- Dropdown Trigger -->
+            <a class="dropdown-button btn" href="#" data-activates="dropdown1">Pick a Story</a>
+
+            <!-- Dropdown Structure -->
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a ui-sref="bay">Micheal Bay</a></li>
+                <li><a ui-sref="night">M. Night Shyamalan</a></li>
+            </ul>
+            <!-- <button class="btn btn-primary waves-effect waves-purple " ui-sref="form">Show The Form</button> -->
+
+        </div>
     </div>
     <div ui-view class="">
 
