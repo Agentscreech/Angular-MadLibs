@@ -3,11 +3,6 @@ angular.module('App', ['ui.router','ui.materialize']) //sets app
     function($stateProvider, $urlRouterProvider){
         $urlRouterProvider.otherwise('/'); //catch all
         $stateProvider
-         .state('home',{
-             url: '/',
-             templateUrl: 'views/home.html',
-             controller: 'home'
-         })
          .state('form',{
              url: '/form',
              templateUrl: 'views/form.html',
