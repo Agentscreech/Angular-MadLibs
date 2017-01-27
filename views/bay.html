@@ -1,5 +1,4 @@
-
-    <h1>Angular Mad Libs</h1>
+    <h3>A Michael Bay Story</h3>
     <form class="card-panel">
       <div class="row">
         <div class="col s4"><label for="mans_name">Man's Name<input type="text" ng-model="inputs.mans_name" /></label></div>
@@ -13,7 +12,7 @@
       </div>
       <div class="row">
         <div class="col s4"><label for="verb1">Verb 1<input type="text" ng-model="inputs.verb1" /></label></div>
-        <div class="col s4"><label for="womans_name1">Woman's Name 1<input type="text" ng-model="inputs.womans_name1" /></label></div>
+        <div class="col s4"><label for="womans_name1">Woman's Name<input type="text" ng-model="inputs.womans_name" /></label></div>
         <div class="col s4"><label for="body_part">Body Part<input type="text" ng-model="inputs.body_part" /></label></div>
       </div>
       <div class="row">
@@ -47,7 +46,20 @@
         <div class="col s4"><label for="verb6">Verb 6<input type="text" ng-model="inputs.verb6" /></label></div>
       </div>
       <div class="center-align">
-          <button class="waves-effect waves-light btn" ui-sref="render">Show The story<i class="material-icons right">send</i></button>
+          <button class="waves-effect waves-light btn" ng-click="render=true">Show The story<i class="material-icons right">send</i></button>
 
       </div>
     </form>
+    <div class="renderView flow-text center-align card-panel" ng-show="render">
+
+
+        <p><span class="input" >{{inputs.mans_name}}</span> is a normal <span class="input" >{{inputs.occupation}}</span>.  Then, one day, a <span class="input" >{{inputs.noun1}}</span> explodes, causing a <span class="input" >{{inputs.noun2}}</span> to blow up, and a nearby <span class="input" >{{inputs.noun3}}</span> erupts into a <span class="input" >{{inputs.shape}}</span> of flames.</p>
+        <p><span class="input" >{{inputs.mans_name}}</span> realizes that he's being chased by the government, who's trying to <span class="input" >{{inputs.verb1}}</span> him.</p>
+        <p>While on the run, he teams up with an incredibly attractive woman named <span class="input" >{{inputs.womans_name}}</span>, who has an incredible <span class="input" >{{inputs.body_part}}</span>.</p>
+        <p>She may be from the streets, but she can <span class="input" >{{inputs.verb2}}</span> like nobody's business.</p>
+        <p>The duo decide to turn the tables on their purseuers by blowing up a <span class="input" >{{inputs.noun4}}</span>, which triggers a chain reaction, causing the local <span class="input" >{{inputs.noun5}}</span>, <span class="input" >{{inputs.restaurant_name}}</span>, and the <span class="input" >{{inputs.historic_monument}}</span> to explode.</p>
+        <p>Then, the bad guys' helicopter gets <span class="input" >{{inputs.verb3}}</span> by a piece of <span class="input" >{{inputs.noun6}}</span> from when the <span class="input" >{{inputs.noun7}}</span> exploded, and the helicopter explodes and falls onto a <span class="input" >{{inputs.noun8}}</span>, causing it to <span class="input" >{{inputs.verb4}}</span>, which shoots a fireball straight into the heart of <span class="input" >{{inputs.noun9}}</span> and destroys the bad guy leader.</p>
+        <p>Everything is <span class="input" >{{inputs.adjective1}}</span> and the two decide that such a <span class="input" >{{inputs.adjective2}}</span> ordeal has caused them to fall in <span class="input" >{{inputs.emotion}}</span> with each other.</p>
+        <p>They decide to celebrate by <span class="input" >{{inputs.verb5}}</span>ing on the <span class="input" >{{inputs.noun10}}</span>, and they even managed to use a <span class="input" >{{inputs.noun11}}</span> from the beginning of the movie, to <span class="input" >{{inputs.verb6}}</span></p>
+
+    </div>

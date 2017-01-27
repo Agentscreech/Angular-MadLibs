@@ -3,14 +3,14 @@ angular.module('App', ['ui.router','ui.materialize']) //sets app
     function($stateProvider, $urlRouterProvider){
         $urlRouterProvider.otherwise('/'); //catch all
         $stateProvider
-         .state('form',{
-             url: '/form',
-             templateUrl: 'views/form.html',
-             controller: 'form'
+         .state('bay',{
+             url: '/bay',
+             templateUrl: 'views/bay.html',
+             controller: 'bay'
          })
-         .state('render', {
-             url: '/render',
-             templateUrl: 'views/render.html',
-             controller: 'render'
+         .state('night',{
+             url: '/night',
+             templateUrl: 'views/night.html',
+             controller: 'night'
          });
 }]);

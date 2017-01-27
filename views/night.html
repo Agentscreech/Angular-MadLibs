@@ -1,0 +1,37 @@
+<h3>A M. Night Shyamalan Story</h3>
+<form class="card-panel">
+    <div class="row">
+        <div class="col s4"><label for="last_name">Last Name<input type="text" ng-model="inputs.last_name"></label>
+        </div>
+        <div class="col s4"><label for="small_town">Name of a Small Town<input type="text" ng-model="inputs.small_town" /></label></div>
+        <div class="col s4"><label for="mans_name">Man's Name<input type="text" ng-model="inputs.mans_name" /></label></div>
+    </div>
+    <div class="row">
+        <div class="col s4"><label for="blue_collar_job_title">Blue Collar Job Title<input type="text" ng-model="inputs.blue_collar_job_title" /></label></div>
+        <div class="col s4"><label for="relative">Type of Relative<input type="text" ng-model="inputs.relative" /></label></div>
+        <div class="col s4"><label for="type_of_accident">Type of Accident<input type="text" ng-model="inputs.type_of_accident" /></label></div>
+    </div>
+    <div class="row">
+        <div class="col s4"><label for="strange_occurance">A Strange Occurance<input type="text" ng-model="inputs.strange_occurance" /></label></div>
+        <div class="col s4"><label for="synonym_for_creepy">A Synonym for Creepy<input type="text" ng-model="inputs.synonym_for_creepy" /></label></div>
+        <div class="col s4"><label for="childs_name">A Child's name<input type="text" ng-model="inputs.childs_name" /></label></div>
+    </div>
+    <div class="row">
+        <div class="col s4"><label for="emotion">Emotion<input type="text" ng-model="inputs.emotion" /></label></div>
+        <div class="col s4"><label for="name">A Name<input type="text" ng-model="inputs.name" /></label></div>
+    </div>
+    <div class="center-align">
+        <button class="waves-effect waves-light btn" ng-click="render=true">Show The story<i class="material-icons right">send</i></button>
+
+    </div>
+</form>
+
+<div class="renderView flow-text center-align card-panel" ng-show="render">
+        <p>The<span clas="input">{{input.last_name}}</span> family lives on a farm in <span clas="input">{{input.small_town}}</span>, Pennsylvania.</p>
+        <p><span clas="input">{{input.mans_name}}</span> is a former <span clas="input">{{input.small_town}}</span> who lost his <span clas="input">{{input.relative}}</span> in a <span clas="input">{{input.type_of_accident}}</span></p>
+        <p>But soon a <span clas="input">{{input.strange_occurance}}</span> begins to happen.  The only other person who understands what's going on is a <span clas="input">{{input.synonym_for_creepy}}</span> child.</p>
+        <p>He and <span clas="input">{{input.childs_name}}</span> begin to uncover clues about the <span clas="input">{{input.strange_occurance}}</span>, and it continues to get more awkward and uncomfortable, but the child helps give him <span clas="input">{{input.emotion}}</span>.</p>
+        <p>The two work together to get to the bottom of the <span clas="input">{{input.strange_occurance}}</span>.</p>
+        <p>Then, when it seems unsolvable, <span clas="input">{{input.name}}</span> (played by M. Night Shyamalan) shows up to explain what's going on.</p>
+
+    </div>
